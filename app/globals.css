@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -10,22 +10,92 @@ html {
 
 body {
   font-family: 'Inter', system-ui, sans-serif;
+  background-color: #faf8f5;
+  color: #2d3748;
+  font-weight: 400;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Playfair Display', Georgia, serif;
+  color: #0c1829;
 }
 
+/* Premium button styles */
 @layer components {
   .btn-primary {
-    @apply bg-med-blue text-white px-8 py-4 font-medium hover:bg-blue-900 transition-colors duration-300;
+    @apply bg-navy text-white px-8 py-4 font-medium tracking-wide transition-all duration-300;
+    @apply hover:bg-navy-light;
+    @apply border border-transparent;
+    color: #faf8f5;
   }
 
   .btn-secondary {
-    @apply border-2 border-med-blue text-med-blue px-8 py-4 font-medium hover:bg-med-blue hover:text-white transition-colors duration-300;
+    @apply border border-navy text-navy px-8 py-4 font-medium tracking-wide transition-all duration-300;
+    @apply hover:bg-navy hover:text-white;
+    background: transparent;
+  }
+
+  .btn-gold {
+    @apply bg-gold text-navy px-8 py-4 font-medium tracking-wide transition-all duration-300;
+    @apply hover:bg-gold-dark;
   }
 
   .btn-whatsapp {
-    @apply bg-green-600 text-white px-8 py-4 font-medium hover:bg-green-700 transition-colors duration-300 flex items-center gap-2;
+    @apply bg-[#128C7E] text-white px-8 py-4 font-medium transition-all duration-300 flex items-center gap-2;
+    @apply hover:bg-[#0e7266];
   }
+
+  /* Elegant section divider */
+  .section-divider {
+    @apply w-16 h-px bg-gold mx-auto my-8;
+  }
+
+  /* Premium card style */
+  .card-premium {
+    @apply bg-white border border-gray-100 transition-all duration-500;
+  }
+
+  /* Luxury text styles */
+  .text-luxury-label {
+    @apply text-xs font-medium uppercase text-gold;
+    letter-spacing: 0.15em;
+  }
+
+  .text-luxury-heading {
+    @apply font-serif font-semibold text-navy tracking-wide;
+  }
+}
+
+/* Subtle animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+/* Custom scrollbar for a refined feel */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f5f2ed;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #b8964c;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #96783d;
+}
+
+/* Selection color */
+::selection {
+  background: #b8964c;
+  color: #0c1829;
 }
