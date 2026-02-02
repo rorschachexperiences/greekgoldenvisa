@@ -13,7 +13,6 @@ export default function Header() {
     { href: '/kallithea', label: 'Kallithea' },
     { href: '/faq', label: 'FAQ' },
     { href: '/about', label: 'About' },
-    { href: '/contact', label: 'Contact' },
   ];
 
   return (
