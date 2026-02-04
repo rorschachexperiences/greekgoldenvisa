@@ -122,6 +122,82 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* The Architect */}
+      <section className="py-20 bg-cream">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="order-2 lg:order-1">
+              <div className="bg-white p-8 rounded-lg shadow-lg">
+                <div className="flex items-center gap-4 mb-6">
+                  <div className="w-16 h-16 bg-med-blue text-white rounded-full flex items-center justify-center">
+                    <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="font-serif text-2xl font-bold text-gray-900">Positive Architects</h3>
+                    <p className="text-med-blue font-medium">Design & Architecture Studio</p>
+                  </div>
+                </div>
+                <div className="space-y-4 text-gray-600">
+                  <p>
+                    Our properties are designed and developed by <strong>Aikaterini Efthymiou</strong>, founder of Positive Architects in Athens. With expertise in commercial-to-residential conversions, Katerina transforms underutilized spaces into stunning modern residences.
+                  </p>
+                  <p>
+                    Each property reflects her commitment to refined aesthetics, functional design, and quality craftsmanship. Her conversions are specifically structured to qualify for the Greek Golden Visa program at the €250,000 threshold.
+                  </p>
+                </div>
+                <div className="mt-6 pt-6 border-t border-gray-100">
+                  <div className="flex flex-wrap gap-4 text-sm">
+                    <div className="flex items-center gap-2 text-gray-500">
+                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                      </svg>
+                      Keramikos, Athens
+                    </div>
+                    <div className="flex items-center gap-2 text-gray-500">
+                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                      </svg>
+                      Licensed Architect
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="order-1 lg:order-2">
+              <span className="text-gold font-medium tracking-luxury uppercase text-sm mb-4 block">
+                Our Development Partner
+              </span>
+              <h2 className="font-serif text-4xl font-bold text-gray-900 mb-6">
+                Meet the Architect
+              </h2>
+              <p className="text-gray-600 text-lg mb-6">
+                Behind every property in our portfolio is the vision of an experienced architect who specializes in creating beautiful, functional spaces from commercial buildings.
+              </p>
+              <p className="text-gray-600 text-lg mb-6">
+                These conversions not only provide exceptional living spaces but also qualify for the lower €250,000 Golden Visa investment threshold, making European residency more accessible.
+              </p>
+              <div className="flex flex-wrap gap-6">
+                <div>
+                  <div className="font-serif text-3xl font-bold text-med-blue">10+</div>
+                  <div className="text-gray-500 text-sm">Years Experience</div>
+                </div>
+                <div>
+                  <div className="font-serif text-3xl font-bold text-med-blue">50+</div>
+                  <div className="text-gray-500 text-sm">Projects Completed</div>
+                </div>
+                <div>
+                  <div className="font-serif text-3xl font-bold text-med-blue">100%</div>
+                  <div className="text-gray-500 text-sm">Visa Eligible</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Mission & Values */}
       <section className="py-20 bg-stone-light">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
