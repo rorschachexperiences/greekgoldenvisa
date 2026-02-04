@@ -187,7 +187,7 @@ export default function Home() {
               <div className="space-y-4 mb-10">
                 {[
                   'Direct metro to city center (15 min)',
-                  'Walking distance to beaches',
+                  'Walking distance to all shopping',
                   'Vibrant dining and café culture',
                   'Safe, family-friendly neighborhood',
                 ].map((item, index) => (

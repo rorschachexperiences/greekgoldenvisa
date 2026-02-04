@@ -10,7 +10,7 @@ const faqs = [
     questions: [
       {
         q: 'What is the minimum investment required for a Greek Golden Visa?',
-        a: 'The minimum investment is €250,000 for properties in designated areas including Kallithea. Some prime areas of Athens (city center, northern suburbs) require €500,000. All our properties qualify at the €250,000 threshold.',
+        a: 'The minimum investment is €250,000 for commercial-to-residential conversions and historic building restorations in designated areas including Kallithea. High-demand areas (Athens, Thessaloniki, popular islands) require €800,000, while areas with fewer than approximately 3,100 permanent residents require €400,000. All our properties qualify at the €250,000 threshold.',
       },
       {
         q: 'Who can apply for the Greek Golden Visa?',
@@ -30,7 +30,15 @@ const faqs = [
       },
       {
         q: 'Can I work in Greece with a Golden Visa?',
-        a: 'Yes. The Golden Visa permits you to work, start a business, and conduct any professional activity in Greece.',
+        a: 'The Greek Golden Visa does not permit salaried employment in Greece. However, holders may own or invest in businesses, receive rental income, and work remotely for non-Greek employers. Separate authorization is required for employment in Greece.',
+      },
+      {
+        q: 'How much does health insurance cost in Greece for Golden Visa applicants?',
+        a: 'Health insurance is mandatory for Golden Visa applications and renewals. Most investors find that private health insurance premiums range roughly from €150 to €350 per year per adult for standard residency coverage, with variations depending on age and plan details. Family coverage will be higher but often offers discounts for multiple members on the same policy.',
+      },
+      {
+        q: 'What does health insurance cover under the Greek Golden Visa?',
+        a: 'Golden Visa applicants are required to maintain private health insurance valid in Greece. Standard policies typically cover hospitalization, emergency care, diagnostic tests, and basic medical treatment, with access to Greece\'s well-regarded private healthcare system. Coverage details vary by insurer and plan, and optional upgrades may be available for expanded services such as international coverage or outpatient benefits.',
       },
     ],
   },
@@ -39,11 +47,11 @@ const faqs = [
     questions: [
       {
         q: 'Can I rent out my Golden Visa property?',
-        a: 'Yes. You are free to rent your property on long-term contracts or short-term platforms like Airbnb. Many of our clients generate 4-6% annual rental yields from their Athens properties.',
+        a: 'Yes. Golden Visa properties may be rented on a long-term basis, subject to Greek rental regulations. Short-term rental platforms (such as Airbnb) are not permitted for properties qualifying under the Golden Visa program. Well-selected long-term rental properties in Athens may offer attractive rental income potential, with yields varying based on location, pricing, and market conditions.',
       },
       {
-        q: 'What are the property purchase costs beyond the price?',
-        a: 'Additional costs typically include: Transfer tax (3.09%), notary fees (1-1.5%), legal fees (1-2%), and registration fees (0.5%). We provide a detailed cost breakdown before you commit to any purchase.',
+        q: 'What are the property purchase and Golden Visa costs beyond the purchase price?',
+        a: 'In addition to the property price, buyers should budget for standard acquisition costs such as property transfer tax (currently 3.09%), notary fees (approximately 1–1.5%), legal fees (typically 1–2%), and land registry or cadastre registration fees (around 0.5%). For buyers pursuing the Greek Golden Visa, there are also immigration-related costs, including legal representation for the residency application, document preparation, translations, and government fees for visa issuance. In total, most Golden Visa buyers should expect overall additional costs of approximately €25,000, depending on the complexity of the purchase, number of family members included, and individual legal requirements. We work with a trusted team of Greek attorneys, notaries, and immigration professionals, and provide a clear, itemized cost breakdown before you commit to any purchase.',
       },
       {
         q: 'Can I sell my property after getting the Golden Visa?',
@@ -55,7 +63,7 @@ const faqs = [
       },
       {
         q: 'What rental income can I expect?',
-        a: 'Properties in Kallithea typically generate 4-6% gross rental yields. Short-term (Airbnb) rentals can achieve higher yields but require more management. We can connect you with property management services.',
+        a: 'In areas such as Kallithea, well-selected long-term rental properties may achieve gross rental yields commonly estimated in the 4–6% range, depending on purchase price, condition, and market demand.',
       },
     ],
   },
@@ -64,7 +72,7 @@ const faqs = [
     questions: [
       {
         q: 'How long does the entire process take?',
-        a: 'From property selection to receiving your residence permit, the typical timeline is 3-6 months. This includes property purchase (1-2 months) and Golden Visa application processing (2-3 months).',
+        a: 'From property selection to receiving your residence permit, the typical timeline is 9-12 months. The process starts with signing the contract and a downpayment of 10%, followed by a schedule of payments until the property is delivered with the deed and visa.',
       },
       {
         q: 'What documents do I need for the application?',

@@ -19,8 +19,8 @@ export default function GoldenVisaPage() {
       ),
     },
     {
-      title: 'No Minimum Stay',
-      description: 'Unlike other programs, maintain your residency without minimum physical presence in Greece.',
+      title: 'No Minimum Stay Requirement',
+      description: 'The Greek Golden Visa allows investors to maintain and renew their Greek residency permit without any minimum physical-presence requirement in Greece, provided the qualifying investment is retained.',
       icon: (
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -38,7 +38,7 @@ export default function GoldenVisaPage() {
     },
     {
       title: 'Path to Citizenship',
-      description: 'After 7 years of residency, apply for Greek (EU) citizenship if desired.',
+      description: 'While a Greek Golden Visa can form a pathway toward citizenship, citizenship is not automatic. Applicants must meet requirements such as actual residence in Greece, language and integration criteria, and other conditions set by Greek law.',
       icon: (
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
@@ -46,8 +46,8 @@ export default function GoldenVisaPage() {
       ),
     },
     {
-      title: 'Rental Income',
-      description: 'Generate 4-6% annual rental yields from your Athens property investment.',
+      title: 'Rental Income Potential',
+      description: 'Long-term rental properties in Athens may provide stable income and competitive yields, with returns varying by neighborhood, pricing, and market conditions.',
       icon: (
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -101,7 +101,7 @@ export default function GoldenVisaPage() {
               Greek Golden Visa
             </h1>
             <p className="text-xl text-blue-100 mb-8">
-              The Greek Golden Visa offers one of Europe&apos;s most attractive residency-by-investment programs. Invest €250,000 in property and secure EU residency for your entire family.
+              The Greek Golden Visa offers one of Europe&apos;s most attractive residency-by-investment programs. Invest from €250,000 in qualifying property conversions and secure EU residency for your entire family.
             </p>
             <CTAButton href="/properties">
               View Eligible Properties
@@ -122,7 +122,7 @@ export default function GoldenVisaPage() {
                 The Greek Golden Visa program, introduced in 2013, allows non-EU citizens to obtain Greek residency through real estate investment. It&apos;s one of the most popular residency-by-investment programs in Europe.
               </p>
               <p className="text-gray-600 text-lg mb-6">
-                With a minimum property investment of €250,000, you and your family gain the right to live, work, and travel freely within the Schengen Area. The program has no minimum stay requirements, making it ideal for investors who want to maintain their primary residence elsewhere.
+                With a minimum property investment of €250,000 for qualifying conversions (€800,000 in high-demand areas, €400,000 in areas with fewer than 3,100 residents), you and your family gain the right to live and travel freely within the Schengen Area. The program has no minimum stay requirements, making it ideal for investors who want to maintain their primary residence elsewhere. Note: Golden Visa holders may not take salaried employment in Greece, but may engage in business activities and remote work.
               </p>
               <div className="bg-amber-50 border-l-4 border-amber-500 p-6">
                 <h3 className="font-semibold text-gray-900 mb-2">Investment Requirement</h3>
@@ -296,11 +296,11 @@ export default function GoldenVisaPage() {
               },
               {
                 q: 'Can I work in Greece with a Golden Visa?',
-                a: 'Yes, the Golden Visa permits you to work and conduct business in Greece.',
+                a: 'Golden Visa holders are not permitted to take up salaried employment in Greece, but may engage in business and investment activities, including company ownership and remote work.',
               },
               {
                 q: 'How long does the application process take?',
-                a: 'The entire process, from property selection to receiving your residence permit, typically takes 3-6 months.',
+                a: 'The entire process, from property selection to receiving your residence permit, typically takes 9-12 months.',
               },
             ].map((item, index) => (
               <div key={index} className="bg-gray-50 rounded-lg p-6">

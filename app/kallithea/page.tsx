@@ -4,7 +4,7 @@ import CTAButton from '@/components/CTAButton';
 
 export const metadata: Metadata = {
   title: 'Kallithea, Athens | Neighborhood Guide | Hellenic Estates',
-  description: 'Discover Kallithea - one of Athens\' most desirable neighborhoods. Located 4km from the city center with excellent transport, beaches, and investment potential.',
+  description: 'Discover Kallithea - one of Athens\' most desirable neighborhoods. Located 4km from the city center with excellent transport, shopping, and investment potential.',
 };
 
 export default function KallitheaPage() {
@@ -32,7 +32,7 @@ export default function KallitheaPage() {
         </svg>
       ),
       items: [
-        'Walking distance to beaches',
+        'Walking distance to all shopping',
         'Vibrant cafe culture',
         'Traditional tavernas',
         'Modern shopping centers',
@@ -92,7 +92,7 @@ export default function KallitheaPage() {
               Kallithea
             </h1>
             <p className="text-xl text-gray-200">
-              A vibrant coastal neighborhood combining urban convenience with Mediterranean charm, just 4km from Athens city center.
+              A vibrant neighborhood combining urban convenience with Mediterranean charm, just 4km from Athens city center.
             </p>
           </div>
         </div>
@@ -171,8 +171,8 @@ export default function KallitheaPage() {
               <div className="text-blue-100">Residents</div>
             </div>
             <div>
-              <div className="font-serif text-5xl font-bold text-amber-400 mb-2">2km</div>
-              <div className="text-blue-100">To Beaches</div>
+              <div className="font-serif text-5xl font-bold text-amber-400 mb-2">€250k</div>
+              <div className="text-blue-100">Golden Visa Threshold</div>
             </div>
           </div>
         </div>
@@ -200,7 +200,7 @@ export default function KallitheaPage() {
                 Growing Demand
               </h3>
               <p className="text-gray-600">
-                Strong rental demand from students, professionals, and Airbnb tourists ensures consistent occupancy and yields of 4-6% annually.
+                Strong rental demand from students and professionals ensures consistent occupancy and yields of 4-6% annually.
               </p>
             </div>
             <div className="bg-white rounded-lg p-8 shadow-lg">

@@ -78,6 +78,9 @@ export default function PropertyPage({ params }: Props) {
                   <div className="text-right">
                     <div className="font-serif text-4xl font-bold text-med-blue">
                       €{property.price.toLocaleString()}
+                      {property.status === 'sold' && (
+                        <span className="ml-3 text-red-600 text-2xl font-bold">SOLD</span>
+                      )}
                     </div>
                     <span className="text-gray-500 text-sm">
                       €{Math.round(property.price / property.size).toLocaleString()}/m²
@@ -111,8 +114,8 @@ export default function PropertyPage({ params }: Props) {
                     </div>
                     <div className="text-gray-500 text-sm">Bathroom{property.bathrooms !== 1 ? 's' : ''}</div>
                   </div>
-                  <div className="bg-gray-50 rounded-lg p-4 text-center">
-                    <div className="font-serif text-2xl font-bold text-gray-900 capitalize">
+                  <div className={`rounded-lg p-4 text-center ${property.status === 'sold' ? 'bg-red-50' : 'bg-gray-50'}`}>
+                    <div className={`font-serif text-2xl font-bold capitalize ${property.status === 'sold' ? 'text-red-600' : 'text-gray-900'}`}>
                       {property.status}
                     </div>
                     <div className="text-gray-500 text-sm">Status</div>
@@ -275,6 +278,9 @@ export default function PropertyPage({ params }: Props) {
                         </div>
                         <div className="font-serif text-2xl font-bold text-med-blue mt-4">
                           €{p.price.toLocaleString()}
+                          {p.status === 'sold' && (
+                            <span className="ml-2 text-red-600 text-sm font-bold">SOLD</span>
+                          )}
                         </div>
                       </div>
                     </div>

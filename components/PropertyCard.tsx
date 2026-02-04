@@ -24,6 +24,13 @@ export default function PropertyCard({ property }: PropertyCardProps) {
               </span>
             </div>
           )}
+          {property.status === 'sold' && (
+            <div className="absolute top-4 right-4">
+              <span className="inline-flex items-center bg-red-600 text-white px-3 py-1.5 text-xs font-bold tracking-wide uppercase">
+                Sold
+              </span>
+            </div>
+          )}
         </div>
         <div className="p-6">
           <div className="flex justify-between items-start mb-3">
@@ -43,9 +50,14 @@ export default function PropertyCard({ property }: PropertyCardProps) {
             <span>{property.bathrooms} Bath</span>
           </div>
           <div className="flex justify-between items-center pt-5 border-t border-gray-100">
-            <span className="font-serif text-2xl font-semibold text-navy">
-              €{property.price.toLocaleString()}
-            </span>
+            <div>
+              <span className="font-serif text-2xl font-semibold text-navy">
+                €{property.price.toLocaleString()}
+              </span>
+              {property.status === 'sold' && (
+                <span className="ml-2 text-red-600 text-sm font-semibold">SOLD</span>
+              )}
+            </div>
             <span className="text-gold text-sm font-medium tracking-wide group-hover:translate-x-1 transition-transform inline-flex items-center gap-2">
               View
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
