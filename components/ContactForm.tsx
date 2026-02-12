@@ -83,7 +83,7 @@ export default function ContactForm({ source = 'contact', propertyName }: Contac
             id="name"
             name="name"
             required
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-med-blue focus:border-transparent transition-shadow"
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-navy focus:border-transparent transition-shadow"
             placeholder="Your full name"
           />
         </div>
@@ -96,7 +96,7 @@ export default function ContactForm({ source = 'contact', propertyName }: Contac
             id="email"
             name="email"
             required
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-med-blue focus:border-transparent transition-shadow"
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-navy focus:border-transparent transition-shadow"
             placeholder="your@email.com"
           />
         </div>
@@ -111,7 +111,7 @@ export default function ContactForm({ source = 'contact', propertyName }: Contac
             type="tel"
             id="phone"
             name="phone"
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-med-blue focus:border-transparent transition-shadow"
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-navy focus:border-transparent transition-shadow"
             placeholder="+1 234 567 890"
           />
         </div>
@@ -123,7 +123,7 @@ export default function ContactForm({ source = 'contact', propertyName }: Contac
             id="country"
             name="country"
             required
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-med-blue focus:border-transparent transition-shadow"
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-navy focus:border-transparent transition-shadow"
           >
             <option value="">Select your country</option>
             <option value="United States">United States</option>
@@ -150,7 +150,7 @@ export default function ContactForm({ source = 'contact', propertyName }: Contac
         <select
           id="budget"
           name="budget"
-          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-med-blue focus:border-transparent transition-shadow"
+          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-navy focus:border-transparent transition-shadow"
         >
           <option value="">Select your budget range</option>
           <option value="250000-300000">€250,000 - €300,000</option>
@@ -169,7 +169,7 @@ export default function ContactForm({ source = 'contact', propertyName }: Contac
           name="message"
           required
           rows={5}
-          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-med-blue focus:border-transparent transition-shadow resize-none"
+          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-navy focus:border-transparent transition-shadow resize-none"
           placeholder="Tell us about your investment goals and any questions you have..."
         />
       </div>

@@ -14,16 +14,16 @@ export default function PropertiesPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="bg-med-blue text-white py-20">
+      <section className="bg-navy text-white pt-32 pb-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
-            <span className="inline-block bg-amber-500 text-white px-4 py-2 text-sm font-semibold mb-6">
+            <span className="inline-block bg-gold text-navy px-4 py-2 text-sm font-semibold mb-6">
               All Properties Golden Visa Eligible
             </span>
-            <h1 className="font-serif text-5xl font-bold mb-6">
+            <h1 className="font-serif text-5xl font-bold text-white mb-6">
               Our Properties
             </h1>
-            <p className="text-xl text-blue-100">
+            <p className="text-xl text-white/70">
               Discover premium apartments and lofts in Kallithea, Athens. Each property qualifies for the Greek Golden Visa program and offers excellent rental potential.
             </p>
           </div>
@@ -35,33 +35,33 @@ export default function PropertiesPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             <div>
-              <div className="font-serif text-3xl font-bold text-med-blue">{properties.length}</div>
-              <div className="text-gray-600 text-sm">Properties Available</div>
+              <div className="font-serif text-3xl font-bold text-navy">{properties.length}</div>
+              <div className="text-charcoal text-sm">Properties Available</div>
             </div>
             <div>
-              <div className="font-serif text-3xl font-bold text-med-blue">€250k</div>
-              <div className="text-gray-600 text-sm">Starting Price</div>
+              <div className="font-serif text-3xl font-bold text-navy">€250k</div>
+              <div className="text-charcoal text-sm">Starting Price</div>
             </div>
             <div>
-              <div className="font-serif text-3xl font-bold text-med-blue">50-60</div>
-              <div className="text-gray-600 text-sm">Size Range (m²)</div>
+              <div className="font-serif text-3xl font-bold text-navy">50-60</div>
+              <div className="text-charcoal text-sm">Size Range (m²)</div>
             </div>
             <div>
-              <div className="font-serif text-3xl font-bold text-med-blue">100%</div>
-              <div className="text-gray-600 text-sm">Visa Eligible</div>
+              <div className="font-serif text-3xl font-bold text-navy">100%</div>
+              <div className="text-charcoal text-sm">Visa Eligible</div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Apartments Section */}
-      <section className="py-16 bg-stone-light">
+      <section className="py-16 bg-cream-dark">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-10">
-            <h2 className="font-serif text-3xl font-bold text-gray-900 mb-2">
+            <h2 className="font-serif text-3xl font-bold text-navy mb-2">
               Apartments
             </h2>
-            <p className="text-gray-600">
+            <p className="text-charcoal">
               Modern, fully-renovated apartments perfect for living or rental investment.
             </p>
           </div>
@@ -77,10 +77,10 @@ export default function PropertiesPage() {
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-10">
-            <h2 className="font-serif text-3xl font-bold text-gray-900 mb-2">
+            <h2 className="font-serif text-3xl font-bold text-navy mb-2">
               Lofts
             </h2>
-            <p className="text-gray-600">
+            <p className="text-charcoal">
               Unique converted spaces with character, high ceilings, and modern amenities.
             </p>
           </div>
@@ -93,12 +93,12 @@ export default function PropertiesPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gray-900 text-white">
+      <section className="py-16 bg-navy text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="font-serif text-3xl font-bold mb-4">
+          <h2 className="font-serif text-3xl font-bold text-white mb-4">
             Can&apos;t Find What You&apos;re Looking For?
           </h2>
-          <p className="text-gray-300 text-lg mb-8">
+          <p className="text-white/70 text-lg mb-8">
             We have access to exclusive off-market properties. Contact us to discuss your specific requirements.
           </p>
           <a

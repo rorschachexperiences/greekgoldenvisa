@@ -26,7 +26,7 @@ export default function Home() {
               Your Gateway to
               <span className="block text-gold">European Residency</span>
             </h1>
-            <p className="text-xl text-white/70 mb-12 leading-relaxed max-w-xl font-light">
+            <p className="text-xl text-white/80 mb-12 leading-relaxed max-w-xl font-light">
               Invest in premium Athens real estate and secure your family&apos;s future with Greek Golden Visa residency.
             </p>
             <div className="flex flex-wrap gap-4">
@@ -78,7 +78,7 @@ export default function Home() {
             <p className="text-gold font-medium tracking-luxury uppercase text-sm mb-4">
               The Process
             </p>
-            <h2 className="font-serif text-4xl md:text-5xl font-semibold mb-6">
+            <h2 className="font-serif text-4xl md:text-5xl font-semibold text-white mb-6">
               How It Works
             </h2>
             <div className="w-16 h-px bg-gold mx-auto" />
@@ -103,8 +103,8 @@ export default function Home() {
             ].map((item, index) => (
               <div key={index} className="text-center">
                 <span className="text-gold font-serif text-6xl font-light">{item.step}</span>
-                <h3 className="font-serif text-2xl font-semibold mt-6 mb-4">{item.title}</h3>
-                <p className="text-white/60 leading-relaxed">{item.description}</p>
+                <h3 className="font-serif text-2xl font-semibold text-white mt-6 mb-4">{item.title}</h3>
+                <p className="text-white/70 leading-relaxed">{item.description}</p>
               </div>
             ))}
           </div>
@@ -219,7 +219,7 @@ export default function Home() {
                 <div className="font-serif text-4xl md:text-5xl font-light text-gold mb-2">
                   {stat.value}
                 </div>
-                <div className="text-white/50 text-sm tracking-wide">{stat.label}</div>
+                <div className="text-white/70 text-sm tracking-wide">{stat.label}</div>
               </div>
             ))}
           </div>

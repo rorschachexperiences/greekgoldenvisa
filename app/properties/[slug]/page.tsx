@@ -40,18 +40,18 @@ export default function PropertyPage({ params }: Props) {
   return (
     <>
       {/* Breadcrumb */}
-      <div className="bg-gray-100 py-4">
+      <div className="bg-cream-dark pt-28 pb-4">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <nav className="flex items-center gap-2 text-sm">
-            <Link href="/" className="text-gray-500 hover:text-med-blue">
+            <Link href="/" className="text-charcoal/70 hover:text-navy">
               Home
             </Link>
-            <span className="text-gray-400">/</span>
-            <Link href="/properties" className="text-gray-500 hover:text-med-blue">
+            <span className="text-charcoal/40">/</span>
+            <Link href="/properties" className="text-charcoal/70 hover:text-navy">
               Properties
             </Link>
-            <span className="text-gray-400">/</span>
-            <span className="text-gray-900">{property.name}</span>
+            <span className="text-charcoal/40">/</span>
+            <span className="text-navy">{property.name}</span>
           </nav>
         </div>
       </div>
@@ -68,21 +68,21 @@ export default function PropertyPage({ params }: Props) {
               <div className="mt-8 pb-8 border-b">
                 <div className="flex flex-wrap items-start justify-between gap-4 mb-4">
                   <div>
-                    <span className="text-med-blue font-medium uppercase tracking-wide text-sm">
+                    <span className="text-navy font-medium uppercase tracking-wide text-sm">
                       {property.type} in {property.location.area}
                     </span>
-                    <h1 className="font-serif text-4xl font-bold text-gray-900 mt-1">
+                    <h1 className="font-serif text-4xl font-bold text-navy mt-1">
                       {property.name}
                     </h1>
                   </div>
                   <div className="text-right">
-                    <div className="font-serif text-4xl font-bold text-med-blue">
+                    <div className="font-serif text-4xl font-bold text-navy">
                       €{property.price.toLocaleString()}
                       {property.status === 'sold' && (
                         <span className="ml-3 text-red-600 text-2xl font-bold">SOLD</span>
                       )}
                     </div>
-                    <span className="text-gray-500 text-sm">
+                    <span className="text-charcoal/70 text-sm">
                       €{Math.round(property.price / property.size).toLocaleString()}/m²
                     </span>
                   </div>
@@ -96,52 +96,52 @@ export default function PropertyPage({ params }: Props) {
 
                 {/* Quick Specs */}
                 <div className="grid grid-cols-4 gap-4">
-                  <div className="bg-gray-50 rounded-lg p-4 text-center">
-                    <div className="font-serif text-2xl font-bold text-gray-900">
+                  <div className="bg-cream rounded-lg p-4 text-center">
+                    <div className="font-serif text-2xl font-bold text-navy">
                       {property.size}
                     </div>
-                    <div className="text-gray-500 text-sm">m²</div>
+                    <div className="text-charcoal/70 text-sm">m²</div>
                   </div>
-                  <div className="bg-gray-50 rounded-lg p-4 text-center">
-                    <div className="font-serif text-2xl font-bold text-gray-900">
+                  <div className="bg-cream rounded-lg p-4 text-center">
+                    <div className="font-serif text-2xl font-bold text-navy">
                       {property.bedrooms}
                     </div>
-                    <div className="text-gray-500 text-sm">Bedroom{property.bedrooms !== 1 ? 's' : ''}</div>
+                    <div className="text-charcoal/70 text-sm">Bedroom{property.bedrooms !== 1 ? 's' : ''}</div>
                   </div>
-                  <div className="bg-gray-50 rounded-lg p-4 text-center">
-                    <div className="font-serif text-2xl font-bold text-gray-900">
+                  <div className="bg-cream rounded-lg p-4 text-center">
+                    <div className="font-serif text-2xl font-bold text-navy">
                       {property.bathrooms}
                     </div>
-                    <div className="text-gray-500 text-sm">Bathroom{property.bathrooms !== 1 ? 's' : ''}</div>
+                    <div className="text-charcoal/70 text-sm">Bathroom{property.bathrooms !== 1 ? 's' : ''}</div>
                   </div>
-                  <div className={`rounded-lg p-4 text-center ${property.status === 'sold' ? 'bg-red-50' : 'bg-gray-50'}`}>
-                    <div className={`font-serif text-2xl font-bold capitalize ${property.status === 'sold' ? 'text-red-600' : 'text-gray-900'}`}>
+                  <div className={`rounded-lg p-4 text-center ${property.status === 'sold' ? 'bg-red-50' : 'bg-cream'}`}>
+                    <div className={`font-serif text-2xl font-bold capitalize ${property.status === 'sold' ? 'text-red-600' : 'text-navy'}`}>
                       {property.status}
                     </div>
-                    <div className="text-gray-500 text-sm">Status</div>
+                    <div className="text-charcoal/70 text-sm">Status</div>
                   </div>
                 </div>
               </div>
 
               {/* Description */}
               <div className="py-8 border-b">
-                <h2 className="font-serif text-2xl font-semibold text-gray-900 mb-4">
+                <h2 className="font-serif text-2xl font-semibold text-navy mb-4">
                   About This Property
                 </h2>
-                <p className="text-gray-600 leading-relaxed text-lg">
+                <p className="text-charcoal leading-relaxed text-lg">
                   {property.description}
                 </p>
               </div>
 
               {/* Features */}
               <div className="py-8 border-b">
-                <h2 className="font-serif text-2xl font-semibold text-gray-900 mb-4">
+                <h2 className="font-serif text-2xl font-semibold text-navy mb-4">
                   Features & Amenities
                 </h2>
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
                   {property.features.map((feature, index) => (
-                    <div key={index} className="flex items-center gap-2 text-gray-700">
-                      <svg className="w-5 h-5 text-med-blue flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <div key={index} className="flex items-center gap-2 text-charcoal">
+                      <svg className="w-5 h-5 text-navy flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                       </svg>
                       {feature}
@@ -152,31 +152,31 @@ export default function PropertyPage({ params }: Props) {
 
               {/* Location */}
               <div className="py-8">
-                <h2 className="font-serif text-2xl font-semibold text-gray-900 mb-4">
+                <h2 className="font-serif text-2xl font-semibold text-navy mb-4">
                   Location
                 </h2>
                 <div className="space-y-4 mb-6">
                   <div className="flex items-center gap-3">
-                    <svg className="w-6 h-6 text-med-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-6 h-6 text-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                     </svg>
-                    <span className="text-gray-700">
+                    <span className="text-charcoal">
                       {property.location.area}, {property.location.city}, Greece
                     </span>
                   </div>
                   <div className="flex items-center gap-3">
-                    <svg className="w-6 h-6 text-med-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-6 h-6 text-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                     </svg>
-                    <span className="text-gray-700">
+                    <span className="text-charcoal">
                       Nearest Metro: {property.location.nearestMetro} Station
                     </span>
                   </div>
                 </div>
 
                 {/* Map Embed */}
-                <div className="rounded-lg overflow-hidden h-[300px] bg-gray-100">
+                <div className="rounded-lg overflow-hidden h-[300px] bg-cream-dark">
                   <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25186.03574667963!2d23.69121!3d37.95091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bb8466b6f1c9%3A0x400bd2ce2b97a20!2sKallithea%2C%20Greece!5e0!3m2!1sen!2sus!4v1699000000000!5m2!1sen!2sus"
                     width="100%"
@@ -195,7 +195,7 @@ export default function PropertyPage({ params }: Props) {
               <div className="sticky top-24 space-y-6">
                 {/* Contact Card */}
                 <div className="bg-white border rounded-lg p-6 shadow-lg">
-                  <h3 className="font-serif text-xl font-semibold text-gray-900 mb-4">
+                  <h3 className="font-serif text-xl font-semibold text-navy mb-4">
                     Interested in this property?
                   </h3>
                   <div className="space-y-3">
@@ -218,23 +218,23 @@ export default function PropertyPage({ params }: Props) {
 
                 {/* Golden Visa Info */}
                 <div className="bg-amber-50 border border-amber-200 rounded-lg p-6">
-                  <h3 className="font-serif text-lg font-semibold text-gray-900 mb-3 flex items-center gap-2">
+                  <h3 className="font-serif text-lg font-semibold text-navy mb-3 flex items-center gap-2">
                     <svg className="w-6 h-6 text-amber-500" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                     </svg>
                     Golden Visa Eligible
                   </h3>
-                  <p className="text-gray-600 text-sm mb-4">
+                  <p className="text-charcoal text-sm mb-4">
                     This property qualifies for the Greek Golden Visa program, granting EU residency to you and your family.
                   </p>
-                  <Link href="/golden-visa" className="text-med-blue font-medium text-sm hover:underline">
+                  <Link href="/golden-visa" className="text-navy font-medium text-sm hover:underline">
                     Learn more about Golden Visa →
                   </Link>
                 </div>
 
                 {/* Contact Form */}
-                <div className="bg-gray-50 rounded-lg p-6">
-                  <h3 className="font-serif text-lg font-semibold text-gray-900 mb-4">
+                <div className="bg-cream rounded-lg p-6">
+                  <h3 className="font-serif text-lg font-semibold text-navy mb-4">
                     Quick Inquiry
                   </h3>
                   <ContactForm source="property-page" propertyName={property.name} />
@@ -247,9 +247,9 @@ export default function PropertyPage({ params }: Props) {
 
       {/* Similar Properties */}
       {otherProperties.length > 0 && (
-        <section className="py-16 bg-stone-light">
+        <section className="py-16 bg-cream-dark">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="font-serif text-3xl font-bold text-gray-900 mb-8">
+            <h2 className="font-serif text-3xl font-bold text-navy mb-8">
               Similar Properties
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -267,16 +267,16 @@ export default function PropertyPage({ params }: Props) {
                         />
                       </div>
                       <div className="col-span-2 p-6">
-                        <span className="text-med-blue text-sm font-medium uppercase">{p.type}</span>
-                        <h3 className="font-serif text-xl font-semibold text-gray-900 mt-1 group-hover:text-med-blue transition-colors">
+                        <span className="text-navy text-sm font-medium uppercase">{p.type}</span>
+                        <h3 className="font-serif text-xl font-semibold text-navy mt-1 group-hover:text-navy transition-colors">
                           {p.name}
                         </h3>
-                        <div className="flex items-center gap-4 text-gray-600 text-sm mt-2">
+                        <div className="flex items-center gap-4 text-charcoal text-sm mt-2">
                           <span>{p.size} m²</span>
                           <span>{p.bedrooms} Bed</span>
                           <span>{p.bathrooms} Bath</span>
                         </div>
-                        <div className="font-serif text-2xl font-bold text-med-blue mt-4">
+                        <div className="font-serif text-2xl font-bold text-navy mt-4">
                           €{p.price.toLocaleString()}
                           {p.status === 'sold' && (
                             <span className="ml-2 text-red-600 text-sm font-bold">SOLD</span>

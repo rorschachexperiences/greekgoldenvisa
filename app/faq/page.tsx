@@ -116,9 +116,9 @@ function FAQItem({ question, answer }: { question: string; answer: string }) {
         className="w-full py-6 flex items-center justify-between text-left"
         onClick={() => setIsOpen(!isOpen)}
       >
-        <span className="font-medium text-gray-900 pr-8">{question}</span>
+        <span className="font-medium text-navy pr-8">{question}</span>
         <svg
-          className={`w-5 h-5 text-med-blue flex-shrink-0 transition-transform ${
+          className={`w-5 h-5 text-navy flex-shrink-0 transition-transform ${
             isOpen ? 'rotate-180' : ''
           }`}
           fill="none"
@@ -135,7 +135,7 @@ function FAQItem({ question, answer }: { question: string; answer: string }) {
       </button>
       {isOpen && (
         <div className="pb-6 pr-12">
-          <p className="text-gray-600">{answer}</p>
+          <p className="text-charcoal">{answer}</p>
         </div>
       )}
     </div>
@@ -146,13 +146,13 @@ export default function FAQPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="bg-med-blue text-white py-20">
+      <section className="bg-navy text-white pt-32 pb-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
-            <h1 className="font-serif text-5xl font-bold mb-6">
+            <h1 className="font-serif text-5xl font-bold text-white mb-6">
               Frequently Asked Questions
             </h1>
-            <p className="text-xl text-blue-100">
+            <p className="text-xl text-white/70">
               Find answers to common questions about the Greek Golden Visa program, property investment, and our services.
             </p>
           </div>
@@ -164,7 +164,7 @@ export default function FAQPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           {faqs.map((category, categoryIndex) => (
             <div key={categoryIndex} className="mb-16">
-              <h2 className="font-serif text-2xl font-bold text-gray-900 mb-8 pb-4 border-b-2 border-med-blue">
+              <h2 className="font-serif text-2xl font-bold text-navy mb-8 pb-4 border-b-2 border-navy">
                 {category.category}
               </h2>
               <div>
@@ -178,12 +178,12 @@ export default function FAQPage() {
       </section>
 
       {/* Still Have Questions */}
-      <section className="py-20 bg-stone-light">
+      <section className="py-20 bg-cream-dark">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="font-serif text-3xl font-bold text-gray-900 mb-4">
+          <h2 className="font-serif text-3xl font-bold text-navy mb-4">
             Still Have Questions?
           </h2>
-          <p className="text-xl text-gray-600 mb-10">
+          <p className="text-xl text-charcoal mb-10">
             Our team is here to help. Book a free consultation and get personalized answers to your questions.
           </p>
           <div className="flex flex-wrap justify-center gap-4">

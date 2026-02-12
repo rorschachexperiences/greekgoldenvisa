@@ -144,7 +144,7 @@ export default function PropertyGallery({ images, propertyName, video }: Propert
               <button
                 onClick={() => setShowVideo(true)}
                 className={`relative flex-shrink-0 w-24 h-20 rounded-lg overflow-hidden ${
-                  showVideo ? 'ring-2 ring-med-blue ring-offset-2' : ''
+                  showVideo ? 'ring-2 ring-navy ring-offset-2' : ''
                 }`}
               >
                 <div className="absolute inset-0 bg-gray-900 flex items-center justify-center">
@@ -170,7 +170,7 @@ export default function PropertyGallery({ images, propertyName, video }: Propert
                 }}
                 className={`relative flex-shrink-0 w-24 h-20 rounded-lg overflow-hidden transition-all ${
                   selectedIndex === index && !showVideo
-                    ? 'ring-2 ring-med-blue ring-offset-2'
+                    ? 'ring-2 ring-navy ring-offset-2'
                     : 'opacity-70 hover:opacity-100'
                 }`}
               >

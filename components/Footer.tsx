@@ -12,7 +12,7 @@ export default function Footer() {
                 Hellenic<span className="text-gold">Estates</span>
               </span>
             </Link>
-            <p className="text-white/50 leading-relaxed mb-8">
+            <p className="text-white/60 leading-relaxed mb-8">
               Your trusted partner for Greek Golden Visa property investments in Athens.
             </p>
             <div className="flex space-x-4">
@@ -20,7 +20,7 @@ export default function Footer() {
                 <a
                   key={social}
                   href="#"
-                  className="w-10 h-10 border border-white/20 flex items-center justify-center text-white/50 hover:text-gold hover:border-gold transition-colors"
+                  className="w-10 h-10 border border-white/20 flex items-center justify-center text-white/60 hover:text-gold hover:border-gold transition-colors"
                 >
                   {social === 'facebook' && (
                     <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -58,7 +58,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-white/50 hover:text-gold transition-colors"
+                    className="text-white/60 hover:text-gold transition-colors"
                   >
                     {link.label}
                   </Link>
@@ -72,19 +72,19 @@ export default function Footer() {
             <h3 className="text-gold font-medium tracking-luxury uppercase text-xs mb-8">
               Contact
             </h3>
-            <ul className="space-y-4 text-white/50">
+            <ul className="space-y-4 text-white/60">
               <li>
-                <span className="block text-white/30 text-xs uppercase tracking-wide mb-1">Address</span>
+                <span className="block text-white/50 text-xs uppercase tracking-wide mb-1">Address</span>
                 Kallithea, Athens<br />Greece 17671
               </li>
               <li>
-                <span className="block text-white/30 text-xs uppercase tracking-wide mb-1">Email</span>
+                <span className="block text-white/50 text-xs uppercase tracking-wide mb-1">Email</span>
                 <a href="mailto:info@hellenicestates.com" className="hover:text-gold transition-colors">
                   info@hellenicestates.com
                 </a>
               </li>
               <li>
-                <span className="block text-white/30 text-xs uppercase tracking-wide mb-1">Phone</span>
+                <span className="block text-white/50 text-xs uppercase tracking-wide mb-1">Phone</span>
                 <a href="tel:+302101234567" className="hover:text-gold transition-colors">
                   +30 210 123 4567
                 </a>
@@ -110,10 +110,10 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-white/10 mt-16 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-white/30 text-sm">
+          <p className="text-white/50 text-sm">
             &copy; {new Date().getFullYear()} Hellenic Estates. All rights reserved.
           </p>
-          <p className="text-white/30 text-sm">
+          <p className="text-white/50 text-sm">
             Designed for discerning investors.
           </p>
         </div>
