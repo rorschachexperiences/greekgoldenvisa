@@ -15,7 +15,7 @@ export default function PropertyGallery({ images, propertyName, video }: Propert
   const [showVideo, setShowVideo] = useState(false);
   const thumbnailsRef = useRef<HTMLDivElement>(null);
 
-  const displayImages = images.length > 0 ? images : ['/images/general/placeholder.jpg'];
+  const displayImages = images.length > 0 ? images : ['/images/general/placeholder.webp'];
   const totalItems = displayImages.length;
   const maxVisibleThumbnails = 6;
 
@@ -46,11 +46,12 @@ export default function PropertyGallery({ images, propertyName, video }: Propert
         <div className="relative aspect-[16/10] rounded-xl overflow-hidden bg-gray-100 group">
           {showVideo && video ? (
             <video
-              src={video}
               controls
               autoPlay
               className="w-full h-full object-contain bg-black"
             >
+              <source src={`${video}.webm`} type="video/webm" />
+              <source src={`${video}.mp4`} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           ) : (

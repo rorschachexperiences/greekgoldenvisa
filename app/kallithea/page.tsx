@@ -79,7 +79,7 @@ export default function KallitheaPage() {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: "url('/images/area/kallithea-hero.jpg')",
+            backgroundImage: "url('/images/area/kallithea-hero.webp')",
             backgroundColor: '#1e40af',
           }}
         />
@@ -119,7 +119,7 @@ export default function KallitheaPage() {
             <div className="grid grid-cols-2 gap-4">
               <div className="relative h-64 rounded-lg overflow-hidden">
                 <Image
-                  src="/images/area/kallithea-1.jpg"
+                  src="/images/area/kallithea-1.webp"
                   alt="Kallithea streets"
                   fill
                   className="object-cover"
@@ -127,7 +127,7 @@ export default function KallitheaPage() {
               </div>
               <div className="relative h-64 rounded-lg overflow-hidden mt-8">
                 <Image
-                  src="/images/area/kallithea-2.jpg"
+                  src="/images/area/kallithea-2.webp"
                   alt="Kallithea neighborhood"
                   fill
                   className="object-cover"
@@ -135,7 +135,7 @@ export default function KallitheaPage() {
               </div>
               <div className="relative h-64 rounded-lg overflow-hidden">
                 <Image
-                  src="/images/area/kallithea-3.jpg"
+                  src="/images/area/kallithea-3.webp"
                   alt="Kallithea cafes"
                   fill
                   className="object-cover"

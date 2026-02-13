@@ -112,7 +112,7 @@ export default function AboutPage() {
             </div>
             <div className="relative h-[500px] rounded-lg overflow-hidden">
               <Image
-                src="/images/general/team.jpg"
+                src="/images/general/team.webp"
                 alt="Hellenic Estates team"
                 fill
                 className="object-cover"
@@ -131,7 +131,7 @@ export default function AboutPage() {
                 <div className="flex items-center gap-4 mb-6">
                   <div className="w-16 h-16 rounded-full overflow-hidden flex-shrink-0">
                     <Image
-                      src="/images/general/katerina.jpg"
+                      src="/images/general/katerina.webp"
                       alt="Aikaterini Efthymiou"
                       width={64}
                       height={64}

@@ -13,7 +13,7 @@ export default function Home() {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: "url('/images/general/hero.jpg')",
+            backgroundImage: "url('/images/general/hero.webp')",
             backgroundColor: '#0c1829',
           }}
         />
@@ -146,7 +146,7 @@ export default function Home() {
             <div className="relative">
               <div className="aspect-[4/5] relative">
                 <Image
-                  src="/images/general/athens.jpg"
+                  src="/images/general/athens.webp"
                   alt="Athens cityscape"
                   fill
                   className="object-cover"
@@ -166,7 +166,7 @@ export default function Home() {
             <div className="relative order-2 lg:order-1">
               <div className="aspect-[4/5] relative">
                 <Image
-                  src="/images/area/kallithea.jpg"
+                  src="/images/area/kallithea.webp"
                   alt="Kallithea neighborhood"
                   fill
                   className="object-cover"

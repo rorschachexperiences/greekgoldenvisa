@@ -261,7 +261,7 @@ export default function PropertyPage({ params }: Props) {
                         <div
                           className="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-500"
                           style={{
-                            backgroundImage: `url(${p.images[0] || '/images/general/placeholder.jpg'})`,
+                            backgroundImage: `url(${p.images[0] || '/images/general/placeholder.webp'})`,
                             backgroundColor: '#e5e5e5',
                           }}
                         />

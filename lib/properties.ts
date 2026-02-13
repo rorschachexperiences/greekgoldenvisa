@@ -23,7 +23,7 @@ export interface Property {
 
 // Helper to generate image paths
 function generateImagePaths(folder: string, count: number): string[] {
-  return Array.from({ length: count }, (_, i) => `/images/properties/${folder}/image-${i + 1}.jpg`);
+  return Array.from({ length: count }, (_, i) => `/images/properties/${folder}/image-${i + 1}.webp`);
 }
 
 export const properties: Property[] = [
@@ -53,7 +53,7 @@ export const properties: Property[] = [
       'Golden Visa eligible',
     ],
     images: generateImagePaths('loft-1', 10),
-    video: '/images/properties/loft-3/video.mp4',
+    video: '/images/properties/loft-3/video',
     location: {
       area: 'Kallithea',
       city: 'Athens',
@@ -252,7 +252,7 @@ export const properties: Property[] = [
       'Storage room',
     ],
     images: generateImagePaths('apartment-1', 10),
-    video: '/images/properties/apartment-1/video.mp4',
+    video: '/images/properties/apartment-1/video',
     location: {
       area: 'Kallithea',
       city: 'Athens',
@@ -315,7 +315,7 @@ export const properties: Property[] = [
       'Secure parking',
     ],
     images: generateImagePaths('apartment-3', 17),
-    video: '/images/properties/apartment-3/video.mp4',
+    video: '/images/properties/apartment-3/video',
     location: {
       area: 'Kallithea',
       city: 'Athens',

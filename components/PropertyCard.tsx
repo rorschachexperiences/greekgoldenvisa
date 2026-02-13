@@ -12,7 +12,7 @@ export default function PropertyCard({ property }: PropertyCardProps) {
       <div className="bg-white border border-gray-100 overflow-hidden transition-all duration-500 hover:border-gold/30">
         <div className="relative aspect-[4/3] overflow-hidden">
           <Image
-            src={property.images[0] || '/images/general/placeholder.jpg'}
+            src={property.images[0] || '/images/general/placeholder.webp'}
             alt={property.name}
             fill
             className="object-cover transition-transform duration-700 group-hover:scale-105"
