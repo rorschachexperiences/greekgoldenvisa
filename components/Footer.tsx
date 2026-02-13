@@ -112,7 +112,10 @@ export default function Footer() {
             &copy; {new Date().getFullYear()} Ambrosia, LLC dba Hellenic Estates. All rights reserved.
           </p>
           <p className="text-white/50 text-sm">
-            Designed for discerning investors.
+            Website by{' '}
+            <a href="https://vorgesternagency.com" target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors">
+              vorgesternagency.com
+            </a>
           </p>
         </div>
       </div>
