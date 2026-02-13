@@ -1,11 +1,16 @@
 'use client';
 
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { useState, useEffect } from 'react';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const pathname = usePathname();
+
+  // Property detail pages have a light background, so always show navy header
+  const isPropertyDetail = pathname.startsWith('/properties/') && pathname !== '/properties';
 
   useEffect(() => {
     const handleScroll = () => {
@@ -27,7 +32,7 @@ export default function Header() {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        isScrolled
+        isScrolled || isPropertyDetail
           ? 'bg-navy/95 backdrop-blur-sm shadow-lg'
           : 'bg-transparent'
       }`}
@@ -36,7 +41,7 @@ export default function Header() {
         <div className="flex justify-between items-center h-24">
           <Link href="/" className="flex items-center">
             <span className={`font-serif text-2xl font-semibold tracking-wide transition-colors duration-300 ${
-              isScrolled ? 'text-cream' : 'text-white'
+              isScrolled || isPropertyDetail ? 'text-cream' : 'text-white'
             }`}>
               Hellenic<span className="text-gold">Estates</span>
             </span>
@@ -49,7 +54,7 @@ export default function Header() {
                 key={link.href}
                 href={link.href}
                 className={`text-sm font-medium tracking-wide transition-colors duration-300 hover:text-gold ${
-                  isScrolled ? 'text-cream/80' : 'text-white/80'
+                  isScrolled || isPropertyDetail ? 'text-cream/80' : 'text-white/80'
                 }`}
               >
                 {link.label}
@@ -65,7 +70,7 @@ export default function Header() {
 
           {/* Mobile Menu Button */}
           <button
-            className={`lg:hidden p-2 transition-colors ${isScrolled ? 'text-cream' : 'text-white'}`}
+            className={`lg:hidden p-2 transition-colors ${isScrolled || isPropertyDetail ? 'text-cream' : 'text-white'}`}
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label="Toggle menu"
           >
