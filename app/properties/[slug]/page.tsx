@@ -200,10 +200,7 @@ export default function PropertyPage({ params }: Props) {
                   </h3>
                   <div className="space-y-3">
                     <CTAButton href="/contact" className="w-full">
-                      Request Brochure
-                    </CTAButton>
-                    <CTAButton href="/contact" variant="secondary" className="w-full">
-                      Book a Viewing
+                      Request More Info
                     </CTAButton>
                     <CTAButton
                       href="https://wa.me/18034458545"
