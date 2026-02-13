@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 interface CTAButtonProps {
   href: string;
-  variant?: 'primary' | 'secondary' | 'whatsapp';
+  variant?: 'primary' | 'secondary' | 'outline-light' | 'whatsapp';
   children: React.ReactNode;
   external?: boolean;
   className?: string;
@@ -18,6 +18,7 @@ export default function CTAButton({
   const baseClasses = {
     primary: 'btn-primary',
     secondary: 'btn-secondary',
+    'outline-light': 'btn-outline-light',
     whatsapp: 'btn-whatsapp',
   };
 

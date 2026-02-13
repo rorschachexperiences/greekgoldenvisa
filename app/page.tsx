@@ -33,7 +33,7 @@ export default function Home() {
               <CTAButton href="/properties">
                 View Properties
               </CTAButton>
-              <CTAButton href="/golden-visa" variant="secondary">
+              <CTAButton href="/golden-visa" variant="outline-light">
                 Learn More
               </CTAButton>
             </div>

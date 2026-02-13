@@ -115,20 +115,14 @@ export default function ContactPage() {
                   <p className="text-white/70 mb-4">
                     Schedule a free 30-minute consultation with one of our Golden Visa specialists.
                   </p>
-                  {/* Calendly placeholder */}
-                  <div className="bg-white/10 rounded-lg p-4 text-center">
-                    <p className="text-white/60 text-sm mb-3">
-                      Calendly integration placeholder
-                    </p>
-                    <a
-                      href="https://calendly.com"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-block bg-white text-navy px-6 py-3 font-medium rounded hover:bg-cream-dark transition-colors"
-                    >
-                      Select a Time
-                    </a>
-                  </div>
+                  <a
+                    href="https://calendly.com/carol-ambrosia/hellenic-estates"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block w-full bg-white text-navy px-6 py-3 font-medium rounded text-center hover:bg-cream-dark transition-colors"
+                  >
+                    Select a Time
+                  </a>
                 </div>
 
                 {/* Office Hours */}
@@ -139,11 +133,11 @@ export default function ContactPage() {
                   <ul className="space-y-2 text-charcoal">
                     <li className="flex justify-between">
                       <span>Monday - Friday</span>
-                      <span className="font-medium text-navy">9:00 - 18:00</span>
+                      <span className="font-medium text-navy">9:00 AM - 6:00 PM</span>
                     </li>
                     <li className="flex justify-between">
                       <span>Saturday</span>
-                      <span className="font-medium text-navy">10:00 - 14:00</span>
+                      <span className="font-medium text-navy">10:00 AM - 2:00 PM</span>
                     </li>
                     <li className="flex justify-between">
                       <span>Sunday</span>
@@ -151,7 +145,7 @@ export default function ContactPage() {
                     </li>
                   </ul>
                   <p className="text-sm text-charcoal/70 mt-4">
-                    All times are in Athens time (EET/EEST)
+                    All times are in US Eastern Time (ET)
                   </p>
                 </div>
               </div>

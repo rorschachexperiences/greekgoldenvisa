@@ -21,9 +21,15 @@ export interface Property {
   deliveryDate?: string;
 }
 
-// Helper to generate image paths
-function generateImagePaths(folder: string, count: number): string[] {
-  return Array.from({ length: count }, (_, i) => `/images/properties/${folder}/image-${i + 1}.webp`);
+// Helper to generate image paths, optionally placing a specific image first
+function generateImagePaths(folder: string, count: number, firstImage?: number): string[] {
+  const paths = Array.from({ length: count }, (_, i) => `/images/properties/${folder}/image-${i + 1}.webp`);
+  if (firstImage && firstImage <= count) {
+    const idx = firstImage - 1;
+    const hero = paths.splice(idx, 1)[0];
+    paths.unshift(hero);
+  }
+  return paths;
 }
 
 export const properties: Property[] = [
@@ -52,7 +58,7 @@ export const properties: Property[] = [
       'Security entrance',
       'Golden Visa eligible',
     ],
-    images: generateImagePaths('loft-1', 10),
+    images: generateImagePaths('loft-1', 10, 7),
     video: '/images/properties/loft-3/video',
     location: {
       area: 'Kallithea',
@@ -85,7 +91,7 @@ export const properties: Property[] = [
       'Security entrance',
       'Golden Visa eligible',
     ],
-    images: generateImagePaths('loft-2', 10),
+    images: generateImagePaths('loft-2', 10, 5),
     location: {
       area: 'Kallithea',
       city: 'Athens',
@@ -119,7 +125,7 @@ export const properties: Property[] = [
       'Original features',
       'Secure entry',
     ],
-    images: generateImagePaths('loft-1', 34),
+    images: generateImagePaths('loft-1', 34, 7),
     location: {
       area: 'Kallithea',
       city: 'Athens',
@@ -150,7 +156,7 @@ export const properties: Property[] = [
       'Walk-in closet',
       'Private parking',
     ],
-    images: generateImagePaths('loft-2', 25),
+    images: generateImagePaths('loft-2', 25, 5),
     location: {
       area: 'Kallithea',
       city: 'Athens',
