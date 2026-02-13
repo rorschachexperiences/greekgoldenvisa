@@ -191,7 +191,7 @@ export default function FAQPage() {
               Contact Us
             </CTAButton>
             <CTAButton
-              href="https://wa.me/302101234567"
+              href="https://wa.me/18034458545"
               variant="whatsapp"
               external
             >

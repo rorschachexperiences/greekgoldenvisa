@@ -31,6 +31,13 @@ export default function PropertyCard({ property }: PropertyCardProps) {
               </span>
             </div>
           )}
+          {property.status === 'available' && property.deliveryDate && (
+            <div className="absolute top-4 right-4">
+              <span className="inline-flex items-center bg-gold/90 backdrop-blur-sm text-navy px-3 py-1.5 text-xs font-medium tracking-wide">
+                Delivery {property.deliveryDate}
+              </span>
+            </div>
+          )}
         </div>
         <div className="p-6">
           <div className="flex justify-between items-start mb-3">

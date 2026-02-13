@@ -206,7 +206,7 @@ export default function PropertyPage({ params }: Props) {
                       Book a Viewing
                     </CTAButton>
                     <CTAButton
-                      href="https://wa.me/302101234567"
+                      href="https://wa.me/18034458545"
                       variant="whatsapp"
                       external
                       className="w-full"

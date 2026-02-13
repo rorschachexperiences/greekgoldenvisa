@@ -141,14 +141,6 @@ export default function KallitheaPage() {
                   className="object-cover"
                 />
               </div>
-              <div className="relative h-64 rounded-lg overflow-hidden mt-8">
-                <Image
-                  src="/images/area/kallithea-4.jpg"
-                  alt="Kallithea coast"
-                  fill
-                  className="object-cover"
-                />
-              </div>
             </div>
           </div>
         </div>

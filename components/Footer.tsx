@@ -74,19 +74,17 @@ export default function Footer() {
             </h3>
             <ul className="space-y-4 text-white/60">
               <li>
-                <span className="block text-white/50 text-xs uppercase tracking-wide mb-1">Address</span>
-                Kallithea, Athens<br />Greece 17671
+                <span className="block text-white/50 text-xs uppercase tracking-wide mb-1">US Office</span>
+                1404 Old Dairy Dr<br />Columbia, SC 29201
+              </li>
+              <li>
+                <span className="block text-white/50 text-xs uppercase tracking-wide mb-1">Contact</span>
+                Carol Papaletsos
               </li>
               <li>
                 <span className="block text-white/50 text-xs uppercase tracking-wide mb-1">Email</span>
-                <a href="mailto:info@hellenicestates.com" className="hover:text-gold transition-colors">
-                  info@hellenicestates.com
-                </a>
-              </li>
-              <li>
-                <span className="block text-white/50 text-xs uppercase tracking-wide mb-1">Phone</span>
-                <a href="tel:+302101234567" className="hover:text-gold transition-colors">
-                  +30 210 123 4567
+                <a href="mailto:carol@ambrosiasc.com" className="hover:text-gold transition-colors">
+                  carol@ambrosiasc.com
                 </a>
               </li>
             </ul>
@@ -111,7 +109,7 @@ export default function Footer() {
 
         <div className="border-t border-white/10 mt-16 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-white/50 text-sm">
-            &copy; {new Date().getFullYear()} Hellenic Estates. All rights reserved.
+            &copy; {new Date().getFullYear()} Ambrosia, LLC dba Hellenic Estates. All rights reserved.
           </p>
           <p className="text-white/50 text-sm">
             Designed for discerning investors.

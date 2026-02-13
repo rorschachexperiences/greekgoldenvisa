@@ -1,6 +1,7 @@
 import PropertyCard from '@/components/PropertyCard';
 import { properties } from '@/lib/properties';
 import { Metadata } from 'next';
+import CTAButton from '@/components/CTAButton';
 
 export const metadata: Metadata = {
   title: 'Golden Visa Properties | Kallithea, Athens | Hellenic Estates',
@@ -8,8 +9,9 @@ export const metadata: Metadata = {
 };
 
 export default function PropertiesPage() {
-  const apartments = properties.filter((p) => p.type === 'apartment');
   const lofts = properties.filter((p) => p.type === 'loft');
+  const apartments = properties.filter((p) => p.type === 'apartment');
+  const availableCount = properties.filter((p) => p.status === 'available').length;
 
   return (
     <>
@@ -24,7 +26,7 @@ export default function PropertiesPage() {
               Our Properties
             </h1>
             <p className="text-xl text-white/70">
-              Discover premium apartments and lofts in Kallithea, Athens. Each property qualifies for the Greek Golden Visa program and offers excellent rental potential.
+              Discover premium lofts and apartments in Kallithea, Athens. Each property qualifies for the Greek Golden Visa program and offers excellent rental potential.
             </p>
           </div>
         </div>
@@ -35,15 +37,15 @@ export default function PropertiesPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             <div>
-              <div className="font-serif text-3xl font-bold text-navy">{properties.length}</div>
-              <div className="text-charcoal text-sm">Properties Available</div>
+              <div className="font-serif text-3xl font-bold text-navy">{availableCount}</div>
+              <div className="text-charcoal text-sm">Available Now</div>
             </div>
             <div>
-              <div className="font-serif text-3xl font-bold text-navy">€250k</div>
+              <div className="font-serif text-3xl font-bold text-navy">€260k</div>
               <div className="text-charcoal text-sm">Starting Price</div>
             </div>
             <div>
-              <div className="font-serif text-3xl font-bold text-navy">50-60</div>
+              <div className="font-serif text-3xl font-bold text-navy">50-70</div>
               <div className="text-charcoal text-sm">Size Range (m²)</div>
             </div>
             <div>
@@ -54,8 +56,27 @@ export default function PropertiesPage() {
         </div>
       </section>
 
-      {/* Apartments Section */}
+      {/* Lofts Section */}
       <section className="py-16 bg-cream-dark">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="mb-10">
+            <h2 className="font-serif text-3xl font-bold text-navy mb-2">
+              Lofts
+            </h2>
+            <p className="text-charcoal">
+              Unique converted spaces with character, high ceilings, and modern amenities.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {lofts.map((property) => (
+              <PropertyCard key={property.id} property={property} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Apartments Section */}
+      <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-10">
             <h2 className="font-serif text-3xl font-bold text-navy mb-2">
@@ -73,22 +94,18 @@ export default function PropertiesPage() {
         </div>
       </section>
 
-      {/* Lofts Section */}
-      <section className="py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="mb-10">
-            <h2 className="font-serif text-3xl font-bold text-navy mb-2">
-              Lofts
-            </h2>
-            <p className="text-charcoal">
-              Unique converted spaces with character, high ceilings, and modern amenities.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {lofts.map((property) => (
-              <PropertyCard key={property.id} property={property} />
-            ))}
-          </div>
+      {/* Customization Note */}
+      <section className="py-16 bg-cream">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="font-serif text-3xl font-bold text-navy mb-4">
+            Looking for Something Larger?
+          </h2>
+          <p className="text-charcoal text-lg mb-8 leading-relaxed">
+            Larger properties can be customized structurally to match your specific needs. Whether you need additional bedrooms, a different layout, or combined units, we can work with our architect to make it happen.
+          </p>
+          <CTAButton href="/contact">
+            Contact Us to Discuss
+          </CTAButton>
         </div>
       </section>
 
